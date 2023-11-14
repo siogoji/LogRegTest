@@ -1,0 +1,15 @@
+﻿<!-- Similar structure as Tickets view -->
+<table class="table">
+    <!-- Header and other table elements -->
+    <tbody>
+        @foreach (var ticket in Model)
+        {
+            <tr>
+                <td class="text-center">@ticket.TicketId</td>
+                <td class="text-center">@ticket.Type</td>
+                <td class="text-center">@ticket.Period</td>
+                <td class="text-center">@ticket.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+﻿@model PurchaseConfirmationModel
+
+@{
+    ViewData["Title"] = "Purchase Confirmation";
+}
+
+<h2>Purchase Confirmation</h2>
+
+<p>Thank you for your purchase!</p>
+
+<dl class="row">
+    <dt class="col-sm-3">Ticket ID:</dt>
+    <dd class="col-sm-9">@Model.TicketId</dd>
+
+    <dt class="col-sm-3">Type:</dt>
+    <dd class="col-sm-9">@Model.Type</dd>
+
+    <dt class="col-sm-3">Period:</dt>
+    <dd class="col-sm-9">@Model.Period</dd>
+
+    <dt class="col-sm-3">Price:</dt>
+    <dd class="col-sm-9">@Model.Price</dd>
+</dl>
